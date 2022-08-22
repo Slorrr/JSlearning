@@ -1,3 +1,2 @@
-let num;
-num = "2";
-alert(typeof(num));
+result = prompt("Сколько вам лет?", []);
+alert(`Вам ${result} лет`);
