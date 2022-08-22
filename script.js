@@ -1,3 +1,3 @@
-let message;
-message = "hello world!";
-alert(message);
+let num;
+num = "2";
+alert(typeof(num));
