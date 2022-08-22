@@ -1,1 +1,3 @@
-alert("Hello from JS")
+let message;
+message = "hello world!";
+alert(message);
