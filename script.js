@@ -1,11 +1,25 @@
-let animal = {
-    eats: true
-  };
-  let rabbit = {
-    jumps: true
-  };
+class Animal {
+    constructor(name) {
+      this.speed = 0;
+      this.name = name;
+    }
+    run(speed) {
+      this.speed = speed;
+      alert(`${this.name} бежит со скоростью ${this.speed}.`);
+    }
+    stop() {
+      this.speed = 0;
+      alert(`${this.name} стоит.`);
+    }
+  }
   
-  rabbit.__proto__ = animal; 
+  // Наследуем от Animal указывая "extends Animal"
+  class Rabbit extends Animal {
+    hide() {
+      alert(`${this.name} прячется!`);
+    }
+  }
   
-  alert( rabbit.eats ); 
-  alert( rabbit.jumps ); 
+  let rabbit = new Rabbit("Белый кролик");
+  
+  rabbit.run(5); 
