@@ -1,13 +1,11 @@
-let student = {
-    name: 'John',
-    age: 30,
-    isAdmin: false,
-    courses: ['html', 'css', 'js'],
-    wife: null
+let animal = {
+    eats: true
+  };
+  let rabbit = {
+    jumps: true
   };
   
-  let json = JSON.stringify(student);
+  rabbit.__proto__ = animal; 
   
-  alert(typeof json); 
-  
-  alert(json);
+  alert( rabbit.eats ); 
+  alert( rabbit.jumps ); 
